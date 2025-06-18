@@ -58,10 +58,10 @@ const Contact: React.FC = () => {
     console.log(name, email, company, message, "Form submitted");
   };
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" className="py-8 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="flex flex-col md:flex-row">
+        {/* <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden"> */}
+          {/* <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 bg-gradient-to-br from-slate-800 to-cyan-800 p-10 text-white">
               <h2 className="text-3xl font-bold mb-6">
                 CONTACT US TO LEARN MORE!
@@ -177,8 +177,8 @@ const Contact: React.FC = () => {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </section>
   );

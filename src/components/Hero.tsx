@@ -40,16 +40,12 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="#contact"
+                href="https://hutechsolutions.com/contact-us/"
                 className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-xl font-semibold hover:opacity-90 transition-opacity flex items-center group">
                 TALK TO US
                 <ArrowRight className="ml-2 h-6 w-6 transform group-hover:translate-x-1 transition-transform" />
               </a>
-              <a
-                href="#contact"
-                className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-xl font-semibold hover:bg-white/20 transition-colors">
-                GET FREE AUDIT
-              </a>
+
             </div>
           </div>
 

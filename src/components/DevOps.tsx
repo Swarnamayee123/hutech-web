@@ -87,8 +87,11 @@ const DevOps = () => {
           backgroundRepeat: "no-repeat",
           //  height: "100vh",
           marginTop: "6rem",
+          paddingLeft: "7.5vw",
+          paddingRight: "5.5vw",
+          width: "100vw",
         }}>
-        <div className="max-w-[75rem] mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 mt-20">
@@ -101,7 +104,7 @@ const DevOps = () => {
                 workflows.
               </p>
               <Link
-                to="/contact"
+                to="https://hutechsolutions.com/contact-us/"
                 className="inline-block text-white text-lg font-medium px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
                 style={{
                   background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
@@ -362,7 +365,7 @@ const DevOps = () => {
               trust our guidance to have the best solutions at your disposal!
             </p>
             <Link
-              to="/contact"
+              to="https://hutechsolutions.com/contact-us/"
               className="inline-flex items-center px-8 py-4 text-lg font-medium text-white rounded-lg transition-all duration-300 hover:opacity-90"
               style={{
                 background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
@@ -433,7 +436,7 @@ const DevOps = () => {
                 that drive innovation and growth.
               </p>
               <Link
-                to="/contact"
+                to="https://hutechsolutions.com/contact-us/"
                 className="inline-flex items-center px-8 py-4 text-lg font-medium text-white rounded-lg transition-all duration-300 hover:opacity-90"
                 style={{
                   background: "#fff", // or any dark color

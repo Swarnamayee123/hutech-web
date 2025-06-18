@@ -32,9 +32,12 @@ const Index = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           //  height: "100vh",
+          paddingLeft: "7.5vw",
+          paddingRight: "5.5vw",
+          width: "100vw",
           marginTop: "6rem",
         }}>
-        <div className="max-w-[75rem] mx-auto px-4">
+        <div className="mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 mt-20">
@@ -45,7 +48,7 @@ const Index = () => {
                 business, helping you stay competitive now and in the future.
               </p>
               <Link
-                to="/contact"
+                to="https://hutechsolutions.com/contact-us/"
                 className="inline-block text-white text-lg font-medium px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
                 style={{
                   background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
@@ -72,7 +75,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+                src="https://hutechsolutions.com/wp-content/uploads/2025/06/Cloud-Modernization.jpg"
                 alt="Technology infrastructure"
                 className="rounded-2xl shadow-lg w-full h-auto"
               />
@@ -240,12 +243,17 @@ const Index = () => {
               more efficient, agile, and competitive future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">
-                Start Your Modernization Journey
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+            
+              <Link
+                to="https://hutechsolutions.com/contact-us/"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white rounded-lg transition-all duration-300 hover:shadow-lg"
+                style={{
+                  background: "#fff", // or any dark color
+                  color: "#000", // ensures text is white
+                  border: "none",
+                }}>
+                 Start Your Modernization Journey <ArrowRight className="ml-2" size={20} />
+              </Link>
             </div>
           </div>
         </div>

@@ -67,8 +67,11 @@ function CDServices() {
                 backgroundRepeat: "no-repeat",
                 //  height: "100vh",
                 marginTop: "6rem",
+                paddingLeft: "7.5vw",
+                paddingRight: "5.5vw",
+                width: "100vw",
               }}>
-              <div className="max-w-[75rem] mx-auto px-4">
+              <div className="mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center">
                   <div className="w-full lg:w-1/2">
                     <h1 className="text-4xl lg:text-5xl font-bold mb-4 mt-20">
@@ -79,7 +82,7 @@ function CDServices() {
                     and Continuous Delivery (CD)—the foundations of DevOps.
                     </p>
                     <Link
-                      to="/contact"
+                      to="https://hutechsolutions.com/contact-us/"
                       className="inline-block text-white text-lg font-medium px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
                       style={{
                         background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
@@ -144,7 +147,7 @@ function CDServices() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=600&fit=crop&crop=center"
+                  src="https://hutechsolutions.com/wp-content/uploads/2025/06/CI-CD-img1.jpg"
                   alt="Development Workflow"
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
@@ -211,11 +214,11 @@ function CDServices() {
           </div>
 
           <div className="text-center">
-            <img
+            {/* <img
               src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&h=400&fit=crop&crop=center"
               alt="Development Team Collaboration"
               className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -264,7 +267,7 @@ function CDServices() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=600&fit=crop&crop=center"
+                  src="https://hutechsolutions.com/wp-content/uploads/2025/06/Modern-Cloud-Native-Approach.jpg"
                   alt="DevOps Tools and Automation"
                   className="w-full h-full object-cover rounded-xl shadow-lg"
                 />
@@ -292,7 +295,7 @@ function CDServices() {
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
       <Link
-        to="/contact"
+        to="https://hutechsolutions.com/contact-us/"
         className="inline-block text-white font-semibold py-3 px-8 rounded-lg text-lg"
         style={{
           background: "#fff",

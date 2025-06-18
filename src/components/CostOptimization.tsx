@@ -36,8 +36,11 @@ const CostOptimization = () => {
           backgroundRepeat: "no-repeat",
           //  height: "100vh",
           marginTop: "6rem",
+          paddingLeft: "7.5vw",
+          paddingRight: "5.5vw",
+          width: "100vw",
         }}>
-        <div className="max-w-[75rem] mx-auto px-4">
+        <div className=" mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2">
               <h1 className="text-4xl lg:text-5xl font-bold mb-4 mt-20">
@@ -51,7 +54,7 @@ const CostOptimization = () => {
                 pillar of their business.
               </p>
               <Link
-                to="/contact"
+                to="https://hutechsolutions.com/contact-us/"
                 className="inline-block text-white text-lg font-medium px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
                 style={{
                   background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
@@ -159,7 +162,7 @@ const CostOptimization = () => {
                 <h3 className="text-2xl font-semibold">How we can help</h3>
               </div>
               <p className="text-gray-600 mb-8">
-                At SHALB, we use a comprehensive approach to help customers
+                At HutechSolutions, we use a comprehensive approach to help customers
                 reduce their cloud spend. Our cloud cost optimization services
                 will help your company strike a balance between cost and
                 performance while keeping cloud bills under control.
@@ -470,7 +473,7 @@ const CostOptimization = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contact"
+                to="https://hutechsolutions.com/contact-us/"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white rounded-lg transition-all duration-300 hover:shadow-lg"
                 style={{
                   background: "#fff", // or any dark color

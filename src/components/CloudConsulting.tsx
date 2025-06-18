@@ -87,43 +87,47 @@ const CloudConsulting = () => {
 </ul>
 </section> */}
       {/* Hero Section */}
-    
+
       <section
-              className="text-white pb-20 pt-4 "
-              style={{
-                backgroundImage:
-                  'url("https://hutechsolutions.com/wp-content/uploads/2025/05/AWS-cloud-consulting.jpg")',
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                //  height: "100vh",
-                marginTop: "6rem",
-              }}>
-              <div className="max-w-[75rem] mx-auto px-4">
-                <div className="flex flex-col lg:flex-row items-center">
-                  <div className="w-full lg:w-1/2">
-                    <h1 className="text-4xl lg:text-5xl font-bold mb-4 mt-20">
-                    AWS Cloud Consulting Services
-                    </h1>
-                    <p className="text-lg mb-6">
-                    Transform your business with expert AWS cloud consulting. Our
+        className="text-white pb-20 pt-4 "
+        style={{
+          backgroundImage:
+            'url("https://hutechsolutions.com/wp-content/uploads/2025/05/AWS-cloud-consulting.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          //  height: "100vh",
+          marginTop: "6rem",
+          paddingLeft: "7.5vw",
+          paddingRight: "5.5vw",
+          width: "100vw",
+          // margin: "6rem auto 0 auto",
+        }}>
+        <div className="mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="w-full lg:w-1/2">
+              <h1 className="text-4xl lg:text-5xl font-bold mb-4 mt-20">
+                AWS Cloud Consulting Services
+              </h1>
+              <p className="text-lg mb-6">
+                Transform your business with expert AWS cloud consulting. Our
                 certified professionals help you leverage the full potential of
                 cloud technology to drive innovation and growth.
-                    </p>
-                    <Link
-                      to="/contact"
-                      className="inline-block text-white text-lg font-medium px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
-                      style={{
-                        background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
-                        border: "none",
-                      }}>
-                      Schedule a Consultation
-                    </Link>
-                  </div>
-                  <div className="w-full lg:w-1/2"></div>
-                </div>
-              </div>
-            </section>
+              </p>
+              <Link
+                to="https://hutechsolutions.com/contact-us/"
+                className="inline-block text-white text-lg font-medium px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
+                style={{
+                  background: "linear-gradient(90deg, #51b2d3, #4b84ee)",
+                  border: "none",
+                }}>
+                Schedule a Consultation
+              </Link>
+            </div>
+            <div className="w-full lg:w-1/2"></div>
+          </div>
+        </div>
+      </section>
 
       {/* AWS Cloud Consulting Services Overview */}
       <section className="py-2">
@@ -678,7 +682,7 @@ const CloudConsulting = () => {
               environment, and find a productive strategy to tackle them.
             </p>
             <Link
-              to="/contact"
+              to="https://hutechsolutions.com/contact-us/"
               className="inline-flex items-center px-8 py-4 text-white font-semibold rounded-full hover:opacity-90 transition-opacity text-lg"
               style={{
                 background: "#fff", // or any dark color

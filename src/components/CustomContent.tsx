@@ -63,7 +63,7 @@ const CustomContent: React.FC = () => {
           {/* CTA Button */}
           <div className="mt-12 text-center">
             <a 
-              href="#contact" 
+              href=" https://hutechsolutions.com/contact-us/" 
               className="inline-flex items-center px-8 py-4 bg-cyan-600 text-white text-lg font-semibold hover:bg-cyan-700 transition-colors rounded-lg"
             >
               Get Started Today

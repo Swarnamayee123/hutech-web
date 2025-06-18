@@ -14,19 +14,23 @@ const SEO: React.FC<SEOProps> = ({
   description = 'Expert DevOps services, cloud infrastructure, and SRE solutions. 24/7 monitoring, cost-effective pricing, and enterprise-grade solutions for US, UK, India, UAE & Australia.',
   keywords = 'DevOps services, Cloud Infrastructure, SRE, Kubernetes, Docker, AWS, Cloud Migration, CI/CD, Infrastructure as Code, Cloud Native, DevOps Consulting, Cloud Architecture',
   image = 'https://hutechsolutions.com/wp-content/uploads/2024/08/hutech-logo-1.png.webp',
-  url = 'https://shalb.com',
+  url = 'https://Hutechsolutions.com',
 }) => {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'SHALB',
+    name: 'Hutech Solutions',
     description,
     url,
     logo: image,
     sameAs: [
-      'https://twitter.com/shalbhq',
-      'https://www.linkedin.com/company/shalb',
-      'https://github.com/shalb',
+      'https://www.facebook.com/HutechSolutions',
+      'https://twitter.com/HutechSolutions',
+      'https://www.instagram.com/HutechSolutions',
+      'https://www.youtube.com/channel/HutechSolutions',
+      'https://www.pinterest.com/HutechSolutions',
+      'https://www.linkedin.com/company/HutechSolutions',
+
     ],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -54,13 +58,11 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="SHALB" />
+      <meta property="og:site_name" content="Hutech Solutions" />
       <meta property="og:locale" content="en_US" />
 
       {/* Twitter Card meta tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@shalbhq" />
-      <meta name="twitter:creator" content="@shalbhq" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
@@ -70,7 +72,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="googlebot" content="index, follow" />
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
-      <meta name="author" content="SHALB" />
+      <meta name="author" content="Hutech Solutions" />
       <meta name="geo.region" content="US, UK, IN, AE, AU" />
       <meta name="geo.position" content="global" />
 

@@ -96,8 +96,13 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-slate-900 shadow-md transition-colors duration-200">
       <div
-        className="container mx-auto px-4"
-        style={{ paddingLeft: "3rem", paddingRight: "4rem" }}>
+        className="container "
+        style={{
+          paddingLeft: "8vw",
+          paddingRight: "8vw",
+          // margin: " 0 auto",
+          width: "100vw",
+        }}>
         <div className="flex justify-between items-center py-4 space-x-4">
           {/* Logos */}
           <div className="flex items-center gap-4">
@@ -109,7 +114,7 @@ const Header: React.FC = () => {
               <img
                 src="https://hutechsolutions.com/wp-content/uploads/2024/08/hutech-logo-1.svg"
                 alt="Hutech Solutions Logo"
-                className="h-14 w-32"
+                className="h-12 w-32"
               />
             </a>
             <a
@@ -120,7 +125,7 @@ const Header: React.FC = () => {
               <img
                 src="https://hutechsolutions.com/wp-content/uploads/2024/08/cmmi-level3-logo.svg"
                 alt="CMMI Level 3 Logo"
-                className="h-14"
+                className="h-12"
               />
             </a>
           </div>
@@ -288,27 +293,28 @@ const Header: React.FC = () => {
             </ul>
 
             {/* Column 4 */}
-            <div className="hidden md:block col-span-1 ml-8 w-[70vh] border-l" style={{ borderColor: "#ddd", borderLeftWidth: "1px" }}>
-  <div className="flex flex-col justify-center space-y-4 text-left pl-6">
-    <h3 className="text-3xl font-bold text-[#0B2C4D]">
-      Your Trusted <span className="text-[#FFA500]">Software Partner.</span>
-    </h3>
-    <p className="text-gray-600 text-lg max-w-md">
-      A top software supplier since 2019 with more than 100+ staff
-      members that offers cutting-edge solutions to optimize
-      corporate procedures.
-    </p>
-    <div className="flex flex-col space-y-2 w-[30vh]">
-      <a
-        href="https://hutechsolutions.com/contact/"
-        className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity"
-      >
-        Explore Services
-      </a>
-    </div>
-  </div>
-</div>
-
+            <div
+              className="hidden md:block col-span-1 ml-8 w-[70vh] border-l"
+              style={{ borderColor: "#ddd", borderLeftWidth: "1px" }}>
+              <div className="flex flex-col justify-center space-y-4 text-left pl-6">
+                <h3 className="text-3xl font-bold text-[#0B2C4D]">
+                  Your Trusted{" "}
+                  <span className="text-[#FFA500]">Software Partner.</span>
+                </h3>
+                <p className="text-gray-600 text-lg max-w-md">
+                  A top software supplier since 2019 with more than 100+ staff
+                  members that offers cutting-edge solutions to optimize
+                  corporate procedures.
+                </p>
+                <div className="flex flex-col space-y-2 max-w-[11rem]">
+                  <a
+                    href="https://hutechsolutions.com/contact/"
+                    className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity">
+                    Explore Services
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
