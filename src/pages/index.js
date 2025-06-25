@@ -1,0 +1,731 @@
+/** @format */
+import SEO from "../components/SEO";
+import {
+  UploadCloud,
+  DownloadCloud,
+  ArrowUp,
+  ArrowDown,
+  ArrowRight,
+  Server,
+  Database,
+  BarChart,
+  GitBranch,
+  Pocket as Docker,
+  CloudLightning,
+  ShieldCheck,
+  Zap,
+  Code,
+  CheckCircle,
+  Users,
+  DollarSign,
+  Globe,
+  Shield,
+  Clock,
+  Award,
+} from "lucide-react";
+import Image from "next/image";
+import Head from "next/head";
+// import{SEO}from "../../components/seo";
+export default function About() {
+  const techIcons = [
+    { icon: <Kubernetes />, name: "Kubernetes" },
+    { icon: <Docker className="h-12 w-12 text-cyan-700" />, name: "Docker" },
+    { icon: <Terraform />, name: "Terraform" },
+    { icon: <AWS />, name: "AWS" },
+    { icon: <GitBranch className="h-12 w-12 text-gray-700" />, name: "GitOps" },
+    {
+      icon: <CloudLightning className="h-12 w-12 text-blue-500" />,
+      name: "Azure",
+    },
+    { icon: <Code className="h-12 w-12 text-purple-600" />, name: "CI/CD" },
+    {
+      icon: <ShieldCheck className="h-12 w-12 text-green-600" />,
+      name: "Security",
+    },
+  ];
+  const clients = [
+    {
+      id: 1,
+      name: "Client 1",
+      logo: "https://hutechsolutions.com/wp-content/uploads/2025/04/blue-element.png",
+    },
+    {
+      id: 2,
+      name: "Client 2",
+      logo: "https://hutechsolutions.com/wp-content/uploads/2025/04/techspire-logo.png",
+    },
+    {
+      id: 3,
+      name: "Client 3",
+      logo: "https://hutechsolutions.com/wp-content/uploads/2025/04/synexis-logo.png",
+    },
+    {
+      id: 4,
+      name: "Client 4",
+      logo: "https://hutechsolutions.com/wp-content/uploads/2025/04/dna-infotech.png",
+    },
+    {
+      id: 5,
+      name: "Client 5",
+      logo: "https://hutechsolutions.com/wp-content/uploads/2025/04/aq4-1.png",
+    },
+    {
+      id: 6,
+      name: "Client 6",
+      logo: "https://hutechsolutions.com/wp-content/uploads/2025/04/nexora.png",
+    },
+  ];
+  const features = [
+    {
+      icon: <Globe className="w-8 h-8 text-cyan-600" />,
+      title: "Global Reach",
+      description:
+        "Serving businesses across US, India, UK, Australia, and UAE",
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-cyan-600" />,
+      title: "100% Guarantee",
+      description: "Money-back guarantee on all our services",
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-cyan-600" />,
+      title: "24/7 Monitoring",
+      description: "Round-the-clock system monitoring and support",
+    },
+    {
+      icon: <Award className="w-8 h-8 text-cyan-600" />,
+      title: "Enterprise Grade",
+      description: "Solutions meeting global standards",
+    },
+  ];
+  return (
+    <>
+      <SEO
+        title="Cloud Transformation Services | Modernize Your IT with Hutech Solutions"
+        description="Accelerate your digital evolution with Hutech Solutions’ cloud transformation services. Migrate, modernize, and scale your infrastructure for agility, security, and cost efficiency."
+      />
+      <div>
+        <section className="relative min-h-screen flex items-center bg-slate-900 text-white overflow-hidden">
+          {/* Background Image with Gradient Overlay */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: `url('https://hutechsolutions.com/wp-content/uploads/2025/06/hero-banner.jpg')`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+            }}>
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/90 to-transparent" />
+          </div>
+
+          {/* Content */}
+          <div className="container mx-auto px-4 pt-20 pb-16 relative z-10">
+            {/* Breadcrumb */}
+            <nav className="mb-8"></nav>
+
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Text Content */}
+              <div className="space-y-8" style={{ paddingLeft: "2rem" }}>
+                <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] pt-8">
+                  We build and support
+                  <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                    Cloud Native infrastructures
+                  </span>
+                </h1>
+
+                <div className="flex flex-wrap gap-4 pt-4">
+                  <a
+                    href="https://hutechsolutions.com/contact-us/"
+                    className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-base font-semibold hover:opacity-90 transition-opacity flex items-center group">
+                    TALK TO US
+                    <ArrowRight className="ml-2 h-6 w-6 transform group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Column - Service Blocks */}
+              <div className="relative mt-12">
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl" />
+                <div className="relative grid grid-cols-2 gap-6 max-w-2xl ml-auto">
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 flex flex-col items-center justify-center text-center group hover:bg-white/20 transition-colors">
+                    <Server className="h-16 w-16 text-cyan-400 mb-4 group-hover:scale-110 transition-transform" />
+                    <p className="text-lg font-medium">
+                      DevOps Services, CI/CD Enhancement
+                    </p>
+                  </div>
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 flex flex-col items-center justify-center text-center group hover:bg-white/20 transition-colors">
+                    <Database className="h-16 w-16 text-cyan-400 mb-4 group-hover:scale-110 transition-transform" />
+                    <p className="text-lg font-medium">Cloud Migration</p>
+                  </div>
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 flex flex-col items-center justify-center text-center group hover:bg-white/20 transition-colors">
+                    <BarChart className="h-16 w-16 text-cyan-400 mb-4 group-hover:scale-110 transition-transform" />
+                    <p className="text-lg font-medium">
+                      Cloud Cost Optimization
+                    </p>
+                  </div>
+                  <div className="p-6 rounded-2xl bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 flex flex-col items-center justify-center text-center group hover:bg-white/20 transition-colors">
+                    <Server className="h-16 w-16 text-cyan-400 mb-4 group-hover:scale-110 transition-transform" />
+                    <p className="text-lg font-medium">Platform Engineering</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              TECHNOLOGIES WE LOVE
+            </h2>
+
+            <p className="text-lg text-center max-w-3xl mx-auto mb-16 text-gray-600">
+              At Hutech Solutions, we bring together talented people and
+              innovative solutions to help you get valuable applications to
+              market faster and continue to deliver optimal performance
+              throughout their life cycle.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {techIcons.map((tech, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center p-6 rounded-lg hover:bg-white hover:shadow-md transition-all duration-300">
+                  {tech.icon}
+                  <p className="mt-4 font-medium text-gray-800">{tech.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section id="services" className="py-20 bg-white">
+          <div className="max-w-screen-2xl mx-auto px-4 sm:px-30 lg:px-20">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              WHAT WE OFFER
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Architecture */}
+              <div className="bg-gray-50 rounded-2xl p-8 border border-[#e5e7eb] hover:bg-white hover:shadow-md transition-all duration-300">
+
+                <h3 className="text-xl font-bold mb-6 text-cyan-700">
+                  ARCHITECTURE
+                </h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/design.svg"
+                      alt="architecture design"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>
+                      Next-generation infrastructure design and deployment
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/capacity.svg"
+                      alt="next-gen capacity planning"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Capacity planning and workload forecasting</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/cloud-migration.svg"
+                      alt="capacity planning"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Cloud migration strategy and execution</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/cloud-manage.svg"
+                      alt="cloud management"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Managed cloud services</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/security.svg"
+                      alt="managed cloud services"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Cloud security and compliance</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/cloud-cost.svg"
+                      alt="cloud security"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Cloud cost and resource optimization</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* DevOps Delivery */}
+               <div className="bg-gray-50 rounded-2xl p-8 border border-[#e5e7eb] hover:bg-white hover:shadow-md transition-all duration-300">
+                <h3 className="text-xl font-bold mb-6 text-cyan-700">
+             Model DevOps Delivery
+                </h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/audit.svg"
+                      alt="model devops delivery"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Audit of dev workflows</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/ci-cd.svg"
+                      alt="dev workflows audit"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>CI/CD planning and implementation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/code.svg"
+                      alt="ci/cd planning"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Infrastructure as code</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/container.svg"
+                      alt="infrastructure as code"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Containerizing microservices</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/automated.svg"
+                      alt="containerizing microservices"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Automated pipelines for testing</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/dev.svg"
+                      alt="automated pipelines for testing"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Dev & stage environments launch and setup</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/reference.svg"
+                      alt="dev & stage environments launch"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Reference Infrastructure Design</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/infrastructure.svg"
+                      alt="reference infrastructure design"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Infrastructure delivery platforms</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/support-1.svg"
+                      alt="infrastructure delivery platforms"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Consultancy, team training, and support</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* SRE */}
+               <div className="bg-gray-50 rounded-2xl p-8 border border-[#e5e7eb] hover:bg-white hover:shadow-md transition-all duration-300">
+                <h3 className="text-xl font-bold mb-6 text-cyan-700">Site Reliability Engineering</h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/defining.svg"
+                      alt="site reliability engineering"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Service level objectives definition</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/audit-1.svg"
+                      alt="service level objectives definition"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Existing infrastructure audit</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/logging.svg"
+                      alt="existing infrastructure audit"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Observability: logging, tracing, monitoring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/infrastructure-1.svg"
+                      alt="observability: logging, tracing, monitoring"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Infrastructure upkeep</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/backup.svg"
+                      alt="infrastructure upkeep"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>Backup & disaster recovery</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/05/devops-1.svg"
+                      alt="backup and disaster recovery"
+                      className="h-5 w-5 mr-3 mt-1"
+                      width={128}
+                      height={48}
+                    />
+                    <span>DevSecOps</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="benefits" className="py-24 bg-slate-50">
+          <div className="max-w-screen-2xl mx-auto px-4 sm:px-30 lg:px-20">
+            <h2 className="text-3xl font-bold text-center mb-6">
+              Key Benefits of Our DevOps Managed Services
+            </h2>
+
+            <p className="text-lg text-center max-w-3xl mx-auto mb-16 text-gray-600">
+              {`As your DevOps services partner, we will find opportunities for
+              your products to deliver real value and standardize your business
+              processes. Hutech Solutions DevOps Managed Service environment is
+              a scalable cloud platform designed according to core DevOps`}
+              principles.
+            </p>
+
+            <div className="space-y-20">
+              {/* Benefit 1 */}
+              <div className="flex flex-col md:flex-row items-center">
+                <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                  <div className="p-1 bg-cyan-600 inline-flex rounded-full mb-6">
+                    <CheckCircle className="h-16 w-16 text-white p-3" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Complete Operating & Technical Support{" "}
+                  </h3>
+                  <p className="text-gray-600">
+                    {` By offering DevOps as a service, we offer a seamless project
+                    workflow, uninterrupted essential data streams and
+                    first-class quality. You have the benefit of professional
+                    support through the entire length of the project life cycle.`}
+                  </p>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg h-64 flex items-center justify-center">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/04/devops-professionals.png"
+                      alt="Technical support illustration"
+                      className="h-full w-full object-cover rounded-lg"
+                      width={128}
+                      height={48}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Benefit 2 */}
+              <div className="flex flex-col md:flex-row-reverse items-center">
+                <div className="md:w-1/2 mb-8 md:mb-0 md:pl-12">
+                  <div className="p-1 bg-cyan-600 inline-flex rounded-full mb-6">
+                    <Users className="h-16 w-16 text-white p-3" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Access to Top Class Talent
+                  </h3>
+                  <p className="text-gray-600">
+                    {` By hiring our DevOps professionals, you are benefiting from
+                    some of the smartest people in your corner. You will
+                    undoubtedly receive valuable insights from their extensive
+                    knowledge and years of experience working on projects with
+                    various sizes and levels of complexity in an effort to
+                    improve your project.`}
+                  </p>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg h-64 flex items-center justify-center">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/04/devlopment-team.png"
+                      alt="Team collaboration"
+                      className="h-full w-full object-cover rounded-lg"
+                      width={128}
+                      height={48}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Benefit 3 */}
+              <div className="flex flex-col md:flex-row items-center">
+                <div className="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                  <div className="p-1 bg-cyan-600 inline-flex rounded-full mb-6">
+                    <DollarSign className="h-16 w-16 text-white p-3" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Massively Reduced Project Costs
+                  </h3>
+                  <p className="text-gray-600">
+                    {`With our complex project development processes and
+                    industry-leading methods, we will help optimize workflow
+                    efficiency! All of which means reduced SaaS cloud
+                    administration and maintain costs, while helping you avoid
+                    unplanned costs.`}
+                  </p>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg h-64 flex items-center justify-center">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/04/reduced-project-costs.png"
+                      alt="Cost reduction"
+                      className="h-full w-full object-cover rounded-lg"
+                      width={128}
+                      height={48}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Benefit 4 */}
+              <div className="flex flex-col md:flex-row-reverse items-center">
+                <div className="md:w-1/2 mb-8 md:mb-0 md:pl-12">
+                  <div className="p-1 bg-cyan-600 inline-flex rounded-full mb-6">
+                    <Zap className="h-16 w-16 text-white p-3" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Increased Flexibility for your Dev Team
+                  </h3>
+                  <p className="text-gray-600">
+                    {`The outcome of our DevOps engagement is a high-performing
+                    team of project developers who are engaged in their work.
+                    They will be more engaged in their work as they complete
+                    tasks more quickly, with higher-quality workflows and all at
+                    a lower cost.`}
+                  </p>
+                </div>
+                <div className="md:w-1/2">
+                  <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg h-64 flex items-center justify-center">
+                    <Image
+                      src="https://hutechsolutions.com/wp-content/uploads/2025/04/technical-support.jpg"
+                      alt="Team productivity"
+                      className="h-full w-full object-cover rounded-lg"
+                      width={128}
+                      height={48}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="clients"
+          className="py-20 bg-white overflow-hidden relative">
+          {/* Marquee animation */}
+          <style>
+            {`
+          @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+          }
+        `}
+          </style>
+
+          <div className="max-w-screen-2xl mx-auto px-4 sm:px-30 lg:px-20">
+            <h2 className="text-3xl font-bold text-center mb-6">OUR CLIENTS</h2>
+            <p className="text-lg text-center max-w-2xl mx-auto mb-12 text-gray-600">
+              {` Already benefiting from our successful collaboration`}
+            </p>
+
+            <div className="overflow-hidden">
+              <div
+                className="flex w-max gap-12 items-center"
+                style={{
+                  animation: "marquee 20s linear infinite",
+                }}>
+                {[...clients, ...clients].map((client, index) => (
+                  <Image
+                    key={index}
+                    src={client.logo}
+                    alt={client.name}
+                    className="h-20 w-auto object-contain"
+                    width={128}
+                    height={48}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="pb-12 bg-slate-50 dark:bg-slate-800">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-12 leading-tight text-center pt-10">
+                Global Cloud Infrastructure Solutions at
+                <span className="text-cyan-600"> Competitive Prices</span>
+              </h2>
+
+              {/* Feature grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 p-2">{feature.icon}</div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-slate-800 dark:text-white mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-slate-600 dark:text-gray-300">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Main content */}
+              <div className="space-y-8 text-lg text-slate-600 dark:text-gray-300 leading-relaxed">
+                <p>
+                  {`Looking for affordable Cloud-Native Infrastructure solutions,
+                  SRE services, or Network and System Monitoring that don't
+                  compromise on quality? At Hutech Solutions, we provide
+                  cost-effective, enterprise-grade IT infrastructure and
+                  reliability engineering services tailored for businesses in
+                  the US, India, UK, Australia, and the UAE.`}
+                </p>
+                <p>
+                  {` Our expert team ensures seamless cloud-native deployments,
+                  proactive site reliability engineering, and 24/7 system
+                  monitoring to keep your operations running smoothly. With our
+                  budget-friendly pricing, transparent support, and a 100%
+                  money-back guarantee, you get peace of mind while scaling your
+                  digital operations.`}
+                </p>
+                <p>
+                  {` Whether you're a startup or an enterprise, our cloud
+                  infrastructure and monitoring solutions are designed to meet
+                  global standards—without the hefty price tag.`}
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="mt-12 text-center">
+                <a
+                  href=" https://hutechsolutions.com/contact-us/"
+                  className="inline-flex items-center px-8 py-4 bg-cyan-600 text-white text-lg font-semibold hover:bg-cyan-700 transition-colors rounded-lg">
+                  Get Started Today
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+}
+
+// Custom icon components
+const Kubernetes = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="48"
+    height="48">
+    <path
+      d="M15.9.476a2.14 2.14 0 0 0-.823.218L5.4 5.06a2.15 2.15 0 0 0-1.081 1.87v10.92c0 .77.418 1.5 1.08 1.87l9.7 4.366c.5.226 1.14.226 1.64 0l9.633-4.365a2.15 2.15 0 0 0 1.082-1.87V6.929a2.15 2.15 0 0 0-1.082-1.87L16.724.695A2.14 2.14 0 0 0 15.9.476z"
+      fill="#326ce5"
+    />
+    <path
+      d="M16.002 4.542c-.384.027-.675.356-.675.728 0 .045.008.087.016.13-.006.114-.22.222-.22.345 0 .121.015.244.022.364-.005.068-.022.122-.022.183 0 .115.05.195.05.289-.005.09-.05.181-.05.277 0 .058.006.107.012.163-.012.094-.05.187-.05.288 0 .072.038.127.038.19a1.19 1.19 0 0 0-.038.334c0 .066.011.122.022.183-.022.095-.05.2-.05.318 0 .077.028.138.05.203a1.786 1.786 0 0 0-.05.415c0 .07.027.122.038.183-.038.122-.038.267-.038.4 0 .066.011.122.022.183-.022.095-.05.189-.05.296 0 .077.028.15.05.222-.022.095-.05.189-.05.296 0 .088.028.166.05.244-.022.094-.05.2-.05.307 0 .077.028.144.05.21-.05.196-.05.414-.05.64l.016.128c-.16.113-.27.232-.27.359 0 .044.01.087.017.128-.006.076-.017.15-.017.227 0 .088.017.171.028.255-.01.076-.028.15-.028.233 0 .094.017.183.028.272-.01.082-.028.166-.028.255 0 .072.017.14.028.21-.1.089-.028.181-.028.283 0 .066.018.122.028.183-.01.094-.028.19-.028.294 0 .066.018.133.028.2-.028.148-.05.301-.05.471 0 .044.01.087.016.128-.016.128-.027.261-.027.395 0 .044.01.088.016.128-.016.133-.05.26-.05.394 0 .044.022.066.033.105-.033.15-.066.306-.066.467 0 .039.022.066.033.1-.033.154-.05.317-.05.476 0 .039.017.061.028.094-.028.16-.044.327-.044.5 0 .033.016.055.022.083-.022.167-.033.345-.033.523 0 .022.011.033.011.05-.011.2-.022.4-.022.6 0 .005.011.005.011.01-.011.222-.022.456-.022.689h.022C14.991 22.926 14.98 23 14.98 23.08c0 .077.011.149.022.222-.022.338-.033.69-.033 1.04 0 .104.011.205.011.31-.01.338-.021.683-.021 1.04 0 .094.01.183.01.272-.01.172-.01.35-.01.529 0 .26.01.516.021.761h.033c-.022.255-.022.516-.022.782 0 .255.022.505.044.75-.022.027-.033.05-.033.083 0 .022.01.05.021.077-.01.056-.21.105-.21.166 0 .066.01.128.021.19-.01.061-.21.116-.21.183 0 .066.01.133.021.2-.01.061-.21.116-.21.183 0 .066.01.128.021.19-.01.061-.21.127-.21.194 0 .066.021.127.033.188-.022.066-.033.139-.033.21 0 .061.01.116.021.177-.01.072-.21.145-.21.222 0 .066.01.128.021.19-.01.066-.21.133-.21.2 0 .072.021.14.033.205-.022.077-.033.15-.033.233 0 .05.01.1.01.15.01.066.022.116.033.177-.021.066-.033.144-.033.216 0 .144.055.26.122.35a.48.48 0 0 0-.05.211c0 .138.056.261.134.344-.017.055-.022.11-.022.166 0 .14.05.266.116.361-.01.05-.01.095-.01.145 0 .15.049.283.127.383-.022.044-.033.094-.033.144 0 .096.022.185.05.261-.028.072-.05.15-.05.24 0 .09.023.17.051.244-.028.077-.05.16-.05.25 0 .082.022.16.05.232-.028.083-.05.17-.05.267 0 .072.022.139.05.211-.028.083-.05.177-.05.277 0 .066.022.127.05.188-.028.089-.05.183-.05.283 0 .066.022.127.05.188-.028.089-.05.183-.05.283 0 .066.022.127.05.188-.05.183-.05.388-.05.605h.022c-.022.105-.022.217-.022.334 0 .072.011.139.022.211-.022.1-.032.211-.022.322h.022c-.022.106-.022.217-.022.328 0 .072.011.14.022.211-.022.194-.033.4-.033.616 0 .072.011.139.022.205-.022.222-.033.456-.033.7 0 .06.011.116.011.177l.022.022a10.9 10.9 0 0 0 .022 1.606c.221 2.55 1.209 4.85 2.868 6.683l-.05.05c.044.055.094.1.139.155.038.039.072.083.11.122 1.209 1.326 2.682 2.34 4.368 2.988h.011a11.9 11.9 0 0 0 .787.222c.138.038.283.066.422.1.088.016.177.039.266.05.055.01.105.022.16.033.295.05.6.083.916.105.055 0 .111.01.166.01.055 0 .11.011.166.011.055 0 .11.01.166.01h.022c.061 0 .122.011.19.011h.01a10.95 10.95 0 0 0 3.197-.455l.023-.005c.237-.066.47-.145.7-.222v-.01c.061-.017.116-.045.178-.067.055-.016.11-.033.16-.05a10.77 10.77 0 0 0 .845-.338c.116-.05.233-.1.345-.155.044-.022.094-.044.138-.066a4.592 4.592 0 0 0 .172-.083 9.332 9.332 0 0 0 1.486-.96c.01-.01.022-.016.033-.022.05-.038.1-.077.149-.116.05-.039.095-.083.145-.122l.038-.033a10.89 10.89 0 0 0 3.018-4.022c.72-1.683.984-3.526.76-5.353a10.89 10.89 0 0 0-3.607-7.144l-.038-.039-.078-.083-.116-.128.039-.05c-.011 0-.011-.01-.011-.01-.017-.022-.044-.033-.061-.05a11.22 11.22 0 0 0-1.837-1.5v-.01c-.061-.04-.133-.073-.194-.111-.016-.011-.027-.022-.044-.033a8.324 8.324 0 0 0-.337-.183c-.145-.072-.295-.145-.445-.211-.083-.038-.172-.07-.255-.105-.061-.022-.127-.045-.19-.066-.077-.028-.149-.061-.227-.089-.016-.005-.027-.016-.044-.022a10.89 10.89 0 0 0-3.662-.655c-.044 0-.089.005-.133.005-.177.006-.355.022-.527.039-.061.005-.127.01-.19.022-.155.017-.305.039-.455.066-.038.006-.077.006-.116.011-.155.027-.31.055-.465.094h-.011c-1.643.37-3.137 1.143-4.334 2.217l-.027.022c-.089.077-.171.16-.255.244-.05.05-.1.094-.149.144-.094.094-.183.195-.266.294-.039.044-.078.089-.111.133-.099.116-.187.233-.271.35-.05.066-.094.13-.139.2-.027.038-.055.077-.077.116-.072.106-.145.217-.205.328l-.023.038c-.055.094-.105.195-.155.294-.027.05-.05.1-.072.155-.05.094-.094.195-.138.295-.022.05-.044.105-.066.155-.044.1-.083.2-.116.3-.017.05-.039.105-.055.155-.039.105-.066.21-.1.322-.011.038-.027.083-.038.122-.033.116-.061.233-.089.35-.1.044-.022.094-.027.138-.023.11-.045.222-.061.333-.006.044-.017.083-.022.128a5.73 5.73 0 0 0-.05.355c0 .022-.006.044-.006.066-.016.15-.027.3-.033.45v.01c-.005.056-.01.111-.01.173-.006.14-.01.283-.01.422 0 .039 0 .078.005.116-.005.089-.005.183-.005.277 0 .127.005.255.016.384 0 .05.005.1.01.15.01.117.017.239.033.355.005.05.016.095.022.145.022.127.044.25.072.366.01.05.022.1.039.149.02.089.044.178.072.267.016.05.033.106.055.155.027.083.061.16.094.244.022.05.044.1.066.15.039.083.077.16.122.244.022.039.044.083.066.122.044.077.094.155.144.233l.072.116c.05.067.094.134.144.196.027.044.061.089.095.133.05.061.105.122.16.183.033.039.066.072.1.11.066.067.133.128.2.189.027.027.05.05.077.077.111.1.233.19.35.277.044.034.083.06.127.089.05.038.106.072.16.105.056.033.111.066.172.094.05.027.095.05.144.077.055.027.111.05.166.077.05.022.1.044.155.066.055.022.11.044.166.061.055.022.11.039.166.055.056.016.11.033.166.05.055.01.11.027.166.038.055.01.11.022.167.033.055.01.11.016.166.027.055.006.11.016.166.022.055.005.11.01.166.016.055.005.111.01.166.01.056 0 .111.006.166.006.055 0 .11 0 .166.005h.467c.061 0 .116-.005.172-.005.055 0 .116-.006.166-.006.056 0 .11-.01.166-.01.055-.006.11-.01.166-.017.055-.005.111-.01.166-.021.055-.011.111-.017.166-.028.055-.01.11-.022.166-.033.055-.01.11-.022.166-.039.056-.016.11-.027.167-.05.055-.016.11-.033.165-.05.055-.022.111-.044.167-.061.055-.022.11-.044.155-.066.055-.022.111-.05.167-.078.094-.044.19-.089.277-.139a.64.64 0 0 0 .115-.066c.058-.033.111-.072.166-.11.039-.028.078-.05.111-.078.056-.044.11-.083.161-.133.039-.033.077-.066.11-.1.05-.044.1-.089.15-.133.038-.039.077-.077.11-.116.045-.05.094-.1.14-.155.033-.04.066-.078.1-.117.038-.05.083-.1.122-.155.033-.044.066-.089.094-.133.038-.055.077-.11.11-.166.028-.044.055-.09.084-.139.033-.055.066-.116.1-.172.022-.05.05-.094.072-.144.027-.055.05-.116.077-.172.022-.05.044-.1.061-.155.022-.056.044-.111.061-.172.017-.05.033-.1.05-.155.016-.055.033-.116.05-.172.01-.05.027-.1.038-.155.017-.056.027-.117.039-.173.01-.05.022-.1.027-.15.01-.055.022-.116.028-.172.005-.05.016-.1.022-.15.005-.056.016-.111.022-.172v-.016c.05-.366.05-.733 0-1.1l-.023-.171c-.005-.056-.016-.111-.022-.166-.01-.05-.016-.1-.027-.15-.01-.055-.022-.11-.033-.166-.01-.05-.028-.1-.044-.15-.016-.055-.028-.11-.05-.166-.016-.05-.033-.1-.05-.15-.022-.055-.044-.11-.066-.166-.022-.05-.044-.1-.066-.15-.028-.05-.05-.105-.083-.155-.028-.05-.055-.1-.083-.15-.033-.05-.066-.1-.1-.15-.033-.05-.066-.094-.1-.144-.04-.05-.077-.094-.116-.144-.039-.05-.072-.094-.116-.139-.039-.044-.083-.094-.128-.139-.038-.044-.077-.083-.122-.128-.044-.044-.088-.088-.133-.133-.044-.039-.089-.078-.133-.116-.044-.04-.094-.078-.14-.116-.05-.04-.094-.073-.145-.11-.1-.073-.211-.139-.322-.2-.044-.021-.083-.044-.127-.066a2.55 2.55 0 0 0-.344-.15c-.033-.01-.061-.022-.094-.033a2.493 2.493 0 0 0-.366-.105c-.033-.005-.06-.01-.094-.016a2.597 2.597 0 0 0-.388-.05c-.027 0-.055-.005-.083-.005a2.94 2.94 0 0 0-.4.005c-.032.005-.06.01-.094.016a2.227 2.227 0 0 0-.382.072c-.034.01-.062.022-.095.033a1.912 1.912 0 0 0-.35.122c-.022.01-.05.016-.072.027a2.106 2.106 0 0 0-.349.172l-.022.016c-.105.061-.205.128-.3.2-.033.027-.061.055-.094.083a1.887 1.887 0 0 0-.26.244c-.028.033-.056.066-.078.1-.072.077-.133.16-.19.25-.022.033-.044.066-.061.1-.054.094-.1.194-.139.294-.01.033-.027.061-.038.094-.034.1-.056.205-.072.31-.006.039-.017.072-.022.11-.011.107-.017.217-.017.328 0 .027 0 .055.006.083 0 .11.01.221.027.333.006.033.017.066.022.105.022.105.05.21.083.31.01.034.028.062.04.094.038.1.083.2.138.295.022.033.044.066.066.1.067.094.134.177.211.255.028.028.056.061.084.094.05.05.1.095.155.139.033.027.061.05.094.077.067.05.139.095.211.133.028.022.056.039.083.055.094.05.194.089.295.128.022.01.044.016.066.022.122.044.245.077.372.105.027.005.055.01.083.016.128.022.255.039.383.05.033 0 .067.006.1.006.138.005.277.005.416 0 .033 0 .067-.006.1-.006.128-.01.256-.027.383-.05.027-.005.055-.01.083-.016.127-.028.25-.06.372-.105.022-.006.044-.011.066-.022.1-.039.2-.078.295-.128.027-.016.055-.033.083-.055.072-.038.144-.083.211-.133.033-.027.066-.05.1-.077.05-.044.1-.09.15-.14.027-.027.055-.06.083-.094.077-.077.144-.16.211-.255.022-.033.044-.066.066-.1.055-.094.1-.194.139-.294.01-.033.027-.066.038-.1a1.541 1.541 0 0 0 .083-.311c.006-.033.017-.066.022-.105a1.69 1.69 0 0 0 .028-.328v-.022c-.006-.04-.006-.083-.01-.128 0-.023-.006-.045-.006-.067a2.082 2.082 0 0 0-.056-.394l-.01-.039a1.997 1.997 0 0 0-.128-.35c-.01-.022-.016-.044-.027-.067a1.956 1.956 0 0 0-.85-.982h-.01a1.695 1.695 0 0 0-.177-.094c-.056-.028-.11-.05-.167-.072-.039-.016-.072-.033-.11-.044a1.348 1.348 0 0 0-.195-.05c-.033-.006-.062-.01-.095-.016a1.796 1.796 0 0 0-.193-.017H20c-.056 0-.11 0-.161.006-.056 0-.111.006-.161.017-.033.005-.066.01-.1.016-.061.01-.122.028-.183.05-.038.01-.072.028-.11.044a1.272 1.272 0 0 0-.35.177c-.033.022-.061.044-.094.066-.05.039-.1.078-.145.122-.033.027-.06.056-.089.083a1.717 1.717 0 0 0-.127.15c-.028.033-.05.067-.078.105-.033.05-.066.1-.094.15-.022.038-.044.077-.066.116a1.734 1.734 0 0 0-.083.172c-.017.038-.033.077-.044.116-.023.056-.04.116-.056.172-.01.039-.022.077-.033.116-.01.067-.022.128-.028.194-.005.033-.01.066-.016.1a2.966 2.966 0 0 0 0 .382c.006.034.01.067.017.1.005.067.016.128.027.195.011.039.022.077.033.116.017.056.033.111.056.172.01.039.027.077.044.116.022.056.05.117.083.172.022.04.044.078.066.117.028.05.061.1.094.15.028.033.05.066.078.1.039.05.083.1.127.15.028.027.06.055.089.082.044.044.094.083.144.122.033.022.061.045.094.066.05.034.105.067.161.095.033.016.061.033.094.044.072.028.144.05.223.067.027.006.055.016.083.022.344.078.7.078 1.044 0l.083-.022a1.035 1.035 0 0 0 .222-.067c.033-.01.062-.028.094-.044.056-.028.111-.06.161-.094.033-.022.061-.044.094-.067.05-.038.1-.077.145-.122.027-.027.06-.055.088-.083.044-.05.089-.1.128-.149.027-.033.05-.067.077-.1.034-.05.067-.1.095-.15.022-.039.044-.077.066-.116.033-.056.06-.117.083-.172.017-.04.033-.078.044-.117.022-.055.039-.116.056-.172.01-.039.022-.077.033-.116.01-.067.022-.128.027-.194.006-.034.01-.067.017-.1.005-.084.005-.167.01-.256 0-.04 0-.078-.01-.117 0-.067-.01-.128-.016-.195-.006-.033-.011-.066-.017-.1a2.082 2.082 0 0 0-.056-.395l-.01-.038a1.997 1.997 0 0 0-.128-.35c-.01-.022-.016-.044-.027-.067a1.956 1.956 0 0 0-.85-.982h-.01a1.695 1.695 0 0 0-.177-.094c-.056-.028-.11-.05-.167-.072-.039-.016-.072-.033-.11-.044a1.348 1.348 0 0 0-.195-.05c-.033-.006-.062-.01-.095-.016a1.796 1.796 0 0 0-.193-.017H20c-.056 0-.11 0-.161.006-.056 0-.111.006-.161.017-.033.005-.066.01-.1.016-.061.01-.122.028-.183.05-.038.01-.072.028-.11.044a1.272 1.272 0 0 0-.35.177c-.033.022-.061.044-.094.066-.05.039-.1.078-.145.122-.033.027-.06.056-.089.083a1.717 1.717 0 0 0-.127.15c-.028.033-.05.067-.078.105-.033.05-.066.1-.094.15-.022.038-.044.077-.066.116a1.734 1.734 0 0 0-.083.172c-.017.038-.033.077-.044.116-.023.056-.04.116-.056.172-.01.039-.022.077-.033.116-.01.067-.022.128-.028.194-.005.033-.01.066-.016.1a2.966 2.966 0 0 0 0 .382c.006.034.01.067.017.1.005.067.016.128.027.195.011.039.022.077.033.116.017.056.033.111.056.172.01.039.027.077.044.116.022.056.05.117.083.172.022.04.044.078.066.117.028.05.061.1.094.15.028.033.05.066.078.1.039.05.083.1.127.15.028.027.06.055.089.082.044.044.094.083.144.122.033.022.061.045.094.066.05.034.105.067.161.095.033.016.061.033.094.044.072.028.144.05.223.067.027.006.055.016.083.022.344.078.7.078 1.044 0l.083-.022a1.035 1.035 0 0 0 .222-.067c.033-.01.062-.028.094-.044.056-.028.111-.06.161-.094.033-.022.061-.044.094-.067.05-.038.1-.077.145-.122.027-.027.06-.055.088-.083.044-.05.089-.1.128-.149.027-.033.05-.067.077-.1.034-.05.067-.1.095-.15.022-.039.044-.077.066-.116.033-.056.06-.117.083-.172.017-.04.033-.078.044-.117.022-.055.039-.116.056-.172.01-.039.022-.077.033-.116.01-.067.022-.128.027-.194.006-.034.01-.067.017-.1.005-.084.005-.167.01-.256 0-.04 0-.078-.01-.117 0-.067-.01-.128-.016-.195-.006-.033-.011-.066-.017-.1a2.082 2.082 0 0 0-.056-.395l-.01-.038a1.997 1.997 0 0 0-.128-.35c-.01-.022-.016-.044-.027-.067a1.956 1.956 0 0 0-.85-.982h-.01a1.695 1.695 0 0 0-.177-.094"
+      fill="#fff"
+    />
+  </svg>
+);
+
+const Terraform = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="48"
+    height="48">
+    <path
+      d="M12.042 6.858v8.375l7.296-4.208v-8.375zm0 20.209v-8.375l7.296 4.208v8.354zm8.125-20.208v8.375l7.292-4.208v-8.375zm0 20.208v-8.375l7.292 4.208v8.354z"
+      fill="#5C40F8"
+    />
+  </svg>
+);
+
+const AWS = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="48"
+    height="48">
+    <path
+      d="M15.63 31.388l-7.135-2.56V18.373l7.135 2.43zm1.3 0l7.135-2.56V18.373l-7.135 2.432zm-7.7-13.8l7.2-2.033 6.696 2.16-6.696 2.273zm-2.092-3.39L12.8 12.09l4.222 1.39-4.222 1.39-5.664-1.393zm10.686 1.74l3.695-1.337 3.65 1.337-3.65 1.337-3.695-1.337zm-11.135-2.1l4.222-1.445 2.954 1.445-3.35 1.455-3.826-1.455zM15.5 0l4.1 1.298-4.1 1.355L11.398 1.36zm4.352 3.705l4.613 1.45-4.613 1.558-4.613-1.56zm5.752 2.947l5.345 1.683L26.25 10.84l-8.897 2.738-10.64-3.255 3.617-1.43 4.42 1.487"
+      fill="#FF9900"
+    />
+  </svg>
+);
